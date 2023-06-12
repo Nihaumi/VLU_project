@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using ColorScript;
 
 public class PhänoGenoChecker : MonoBehaviour
 {
@@ -10,15 +11,18 @@ public class PhänoGenoChecker : MonoBehaviour
     [SerializeField] private GameObject genoObject;
     [SerializeField] private Image phänoImage;
     [SerializeField] private Image genoImage;
-    [SerializeField] private Color32 red = new Color32(227, 39, 39, 255);
-    [SerializeField] private Color32 green = new Color32(56, 244, 73, 255);
+    //[SerializeField] private Color32 red = new Color32(227, 39, 39, 255);
+    //[SerializeField] private Color32 green = new Color32(56, 244, 73, 255);
+
+    //color script 
+    Colors colors;
 
     //checkManager Script
     CheckManager checkManager;
     private void Start()
     {
         checkManager = GameObject.Find("CheckManager").GetComponent<CheckManager>();
-
+        colors = new Colors();
     }
 
     //check if the Geno and Phänotype pair fit together, add the bool to the dictionary of checkmanager and call event
@@ -34,12 +38,12 @@ public class PhänoGenoChecker : MonoBehaviour
             if (phänotype != null && genotype != null && phänotype.attribute == genotype.attribute)
             {
                 Debug.Log("Its a match!");
-                ChangeColor(green);
+                ChangeColor(colors.green);
                 return true;
             }
             else
             {
-                ChangeColor(red);
+                ChangeColor(colors.red);
                 return false;
             }
         }
