@@ -11,57 +11,33 @@ public class PhänoGenoChecker : MonoBehaviour
 
     //checkManager Script
     CheckManager checkManager;
-
-
-    //subscribe to events from checkmanager
-    private void OnEnable()
-    {
-        CheckManager.OnClick += Verify;
-    }
-
-    private void OnDisable()
-    {
-        CheckManager.OnClick -= Verify;
-    }
     private void Start()
     {
         checkManager = GameObject.Find("CheckManager").GetComponent<CheckManager>();
     }
 
     //check if the Geno and Phänotype pair fit together, add the bool to the dictionary of checkmanager and call event
-    private void Verify()
+    public bool Verify()
     {
-        if (this.transform.childCount == 0)
+        if(this.transform.childCount != 0 && genoObject.transform.childCount != 0)
         {
-            Debug.Log("Fill out all forms");
-
-            return;
-        }
-        else
-        {
-
-
             phänotype = this.transform.GetChild(0).GetComponent<ElementAssigner>();
             genotype = genoObject.transform.GetChild(0).GetComponent<ElementAssigner>();
 
             if (phänotype != null && genotype != null)
             {
-                if (phänotype.attribute == genotype.attribute)
-                {
-                    Debug.Log("Its a match!");
-                    // if (!checkManager.GetChecklist().ContainsKey(this.gameObject.name))
-                    checkManager.AddCheckToChecklist(this.gameObject.name, true);
-                }
-                else
-                {
-                    Debug.Log("try again!");
-                    if (!checkManager.GetChecklist().ContainsKey(this.gameObject.name))
-                        checkManager.AddCheckToChecklist(this.gameObject.name, false);
-                }
+                Debug.Log("Its a match!");
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-
-
-        checkManager.ControllChecklist();
+        else
+        {
+            Debug.Log("try again!");
+            return false;
+        }
     }
 }

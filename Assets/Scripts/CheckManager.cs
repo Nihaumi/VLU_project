@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
 
 public class CheckManager : MonoBehaviour
 {
@@ -17,60 +18,47 @@ public class CheckManager : MonoBehaviour
     //list of structure spots
     public Dictionary<string, bool> checkList = new Dictionary<string, bool>();
 
+    public List<PhänoGenoChecker> namelist = new List<PhänoGenoChecker>();
+    [SerializeField] private List<bool> verificationlist = new List<bool>();
+
     public int structureSize;
-
-    //subscribe to events
-    private void OnEnable()
-    {
-        OnCheckCall.AddListener(ControllChecklist);
-    }
-
-    private void OnDisable()
-    {
-        OnCheckCall.RemoveListener(ControllChecklist);
-    }
 
     public void CheckBtnClicked()
     {
-        OnClick();
-
-    }
-
-    public Dictionary<string, bool> GetChecklist()
-    {
-        return checkList;
-    }
-    public void ControllChecklist()
-    {
-        
-
-        foreach (var checkItem in checkList)
+        foreach(PhänoGenoChecker item in namelist)
         {
-            if (checkList.ContainsValue(false))
-            {
-                Debug.Log("There seems to be a mistake. Try again.");
-            }
-            else
-            {
-                if (checkList.Count < structureSize)
-                {
-                    Debug.Log("It looks good so far. Continue to fill the structure.");
-                }
-                else
-                {
-                    Debug.Log("All looks well");
-                    Debug.Log($"Count : {checkList.Count}");
-                }
-            }
-
+            bool temp = item.Verify();
+            verificationlist.Add(temp);
         }
-        checkList.Clear();
+
+        if (verificationlist.Contains(false))
+        {
+            Debug.Log("Try again");
+        }
+        else
+        {
+            Debug.Log("You did it!");
+        }
+
+        //verificationlist.Clear();
+
     }
 
-    public void AddCheckToChecklist(string Slot, bool isCorrect)
+    private void Start()
     {
-        checkList.Add(Slot, isCorrect);
+        AddChildrenToList("F0");
+        AddChildrenToList("F1");
+    }
 
-
+    //fills list with slots containing the checker script
+    private void AddChildrenToList(string parent)
+    {
+        GameObject parentObject = GameObject.Find(parent).gameObject;
+        for (int i = 0; i < parentObject.transform.childCount - 1; i++)
+        {
+            Transform child = parentObject.transform.GetChild(i);
+            if (child.GetComponent<PhänoGenoChecker>())
+                namelist.Add(child.GetComponent<PhänoGenoChecker>());
+        }
     }
 }
