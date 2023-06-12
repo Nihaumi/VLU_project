@@ -23,6 +23,8 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
+        image.transform.GetChild(0).GetComponent<Image>().raycastTarget = false;
+        image.transform.GetChild(1).GetComponent<Image>().raycastTarget = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -37,6 +39,8 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;
+        image.transform.GetChild(0).GetComponent<Image>().raycastTarget = true;
+        image.transform.GetChild(1).GetComponent<Image>().raycastTarget = true;
     }
 
 

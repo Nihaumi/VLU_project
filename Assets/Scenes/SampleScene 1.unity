@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 50824388}
   - component: {fileID: 50824386}
   - component: {fileID: 50824385}
+  - component: {fileID: 50824389}
   m_Layer: 5
   m_Name: Genotyp (2)
   m_TagString: Untagged
@@ -438,6 +439,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50824383}
   m_CullTransparentMesh: 1
+--- !u!114 &50824389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50824383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &76851549
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +481,7 @@ GameObject:
   - component: {fileID: 76851553}
   - component: {fileID: 76851551}
   - component: {fileID: 76851554}
+  - component: {fileID: 76851555}
   m_Layer: 5
   m_Name: "Ph\xE4notyp (2)"
   m_TagString: Untagged
@@ -516,6 +548,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "genoPh\xE4notype": 1
   attribute: 1
+--- !u!114 &76851555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76851549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &117722200
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +590,7 @@ GameObject:
   - component: {fileID: 117722205}
   - component: {fileID: 117722203}
   - component: {fileID: 117722202}
+  - component: {fileID: 117722206}
   m_Layer: 5
   m_Name: Genotyp
   m_TagString: Untagged
@@ -594,6 +657,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117722200}
   m_CullTransparentMesh: 1
+--- !u!114 &117722206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117722200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &146838646
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +699,7 @@ GameObject:
   - component: {fileID: 146838651}
   - component: {fileID: 146838649}
   - component: {fileID: 146838648}
+  - component: {fileID: 146838652}
   m_Layer: 5
   m_Name: "Ph\xE4notyp"
   m_TagString: Untagged
@@ -672,6 +766,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146838646}
   m_CullTransparentMesh: 1
+--- !u!114 &146838652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146838646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &147369097
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +1000,7 @@ GameObject:
   - component: {fileID: 215046517}
   - component: {fileID: 215046515}
   - component: {fileID: 215046514}
+  - component: {fileID: 215046518}
   m_Layer: 5
   m_Name: "Ph\xE4notyp (2)"
   m_TagString: Untagged
@@ -942,6 +1067,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215046512}
   m_CullTransparentMesh: 1
+--- !u!114 &215046518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215046512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &235161740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1298,7 @@ GameObject:
   - component: {fileID: 309385327}
   - component: {fileID: 309385325}
   - component: {fileID: 309385324}
+  - component: {fileID: 309385328}
   m_Layer: 5
   m_Name: "Ph\xE4notyp"
   m_TagString: Untagged
@@ -1209,6 +1365,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309385322}
   m_CullTransparentMesh: 1
+--- !u!114 &309385328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309385322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &319006730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,7 +1740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1647,7 +1833,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 64.13144, y: 94.000015}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484944906
 MonoBehaviour:
@@ -1948,7 +2134,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 320, y: 94}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569663300
 MonoBehaviour:
@@ -2090,7 +2276,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 319.54016, y: 166.41985}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572042971
 MonoBehaviour:
@@ -2112,7 +2298,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -2205,6 +2391,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 569663298}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &607198844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2629,7 @@ GameObject:
   - component: {fileID: 661166298}
   - component: {fileID: 661166296}
   - component: {fileID: 661166295}
+  - component: {fileID: 661166299}
   m_Layer: 5
   m_Name: "Ph\xE4notyp (2)"
   m_TagString: Untagged
@@ -2501,6 +2696,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661166293}
   m_CullTransparentMesh: 1
+--- !u!114 &661166299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661166293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &776229937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2841,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 442, y: 94}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &792394986
 MonoBehaviour:
@@ -3028,7 +3253,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 66.12378, y: 166.41985}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865526529
 MonoBehaviour:
@@ -3050,7 +3275,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -3143,6 +3368,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 484944904}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &880763200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,7 +3492,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -430.40002, y: -115.5}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918970361
 MonoBehaviour:
@@ -3345,7 +3578,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -3374,6 +3607,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 2131711502}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &975462011
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +4018,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -148, y: -115.5}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017270654
 MonoBehaviour:
@@ -3863,7 +4104,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -3892,6 +4133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 1664803555}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &1105512891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4447,7 @@ GameObject:
   - component: {fileID: 1271876102}
   - component: {fileID: 1271876103}
   - component: {fileID: 1271876104}
+  - component: {fileID: 1271876105}
   m_Layer: 5
   m_Name: Genotyp
   m_TagString: Untagged
@@ -4264,6 +4514,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "genoPh\xE4notype": 0
   attribute: 1
+--- !u!114 &1271876105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271876099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1366147949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4708,7 +4988,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1547744056}
   m_Direction: 2
   m_Value: 1.0000011
-  m_Size: 0.90909094
+  m_Size: 0.909091
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4972,6 +5252,7 @@ GameObject:
   - component: {fileID: 1506878769}
   - component: {fileID: 1506878767}
   - component: {fileID: 1506878766}
+  - component: {fileID: 1506878770}
   m_Layer: 5
   m_Name: Genotyp (2)
   m_TagString: Untagged
@@ -5038,6 +5319,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506878764}
   m_CullTransparentMesh: 1
+--- !u!114 &1506878770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506878764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1509977109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,7 +5790,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -147.39996, y: -210}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664803557
 MonoBehaviour:
@@ -5914,7 +6225,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 441.54013, y: 166.41985}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724671800
 MonoBehaviour:
@@ -5936,7 +6247,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -6029,6 +6340,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 792394984}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &1751556261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6435,7 +6754,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 189.00772, y: 94.000015}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899845802
 MonoBehaviour:
@@ -6625,6 +6944,7 @@ GameObject:
   - component: {fileID: 1906838874}
   - component: {fileID: 1906838875}
   - component: {fileID: 1906838876}
+  - component: {fileID: 1906838877}
   m_Layer: 5
   m_Name: "Ph\xE4notyp"
   m_TagString: Untagged
@@ -6691,6 +7011,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "genoPh\xE4notype": 1
   attribute: 1
+--- !u!114 &1906838877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906838871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1914697012
 GameObject:
   m_ObjectHideFlags: 0
@@ -6845,6 +7195,7 @@ GameObject:
   - component: {fileID: 1924143096}
   - component: {fileID: 1924143094}
   - component: {fileID: 1924143093}
+  - component: {fileID: 1924143097}
   m_Layer: 5
   m_Name: Genotyp
   m_TagString: Untagged
@@ -6911,6 +7262,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924143091}
   m_CullTransparentMesh: 1
+--- !u!114 &1924143097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924143091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1979306651
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,7 +7332,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 191, y: 166.41983}
-  m_SizeDelta: {x: 150, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979306653
 MonoBehaviour:
@@ -6973,7 +7354,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 100}
+  m_CellSize: {x: 130, y: 100}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -7066,6 +7447,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 1899845800}
+  "ph\xE4noImage": {fileID: 0}
+  genoImage: {fileID: 0}
+  red:
+    serializedVersion: 2
+    rgba: 4280756195
+  green:
+    serializedVersion: 2
+    rgba: 4283036728
 --- !u!1 &1981598388
 GameObject:
   m_ObjectHideFlags: 0
@@ -7573,7 +7962,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -433.00006, y: -209.99997}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 130, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131711504
 MonoBehaviour:

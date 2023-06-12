@@ -40,7 +40,7 @@ public class CheckManager : MonoBehaviour
             Debug.Log("You did it!");
         }
 
-        //verificationlist.Clear();
+        verificationlist.Clear();
 
     }
 
