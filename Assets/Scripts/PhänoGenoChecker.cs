@@ -10,7 +10,7 @@ public class PhänoGenoChecker : MonoBehaviour
     [SerializeField] private GameObject genoObject;
 
     //checkManager Script
-    CheckManager checkManager = new CheckManager();
+    CheckManager checkManager;
 
 
     //subscribe to events from checkmanager
@@ -23,33 +23,45 @@ public class PhänoGenoChecker : MonoBehaviour
     {
         CheckManager.OnClick -= Verify;
     }
+    private void Start()
+    {
+        checkManager = GameObject.Find("CheckManager").GetComponent<CheckManager>();
+    }
 
     //check if the Geno and Phänotype pair fit together, add the bool to the dictionary of checkmanager and call event
     private void Verify()
     {
-        phänotype = this.transform.GetChild(0).GetComponent<ElementAssigner>();
-        genotype = genoObject.transform.GetChild(0).GetComponent<ElementAssigner>();
-
-        if (phänotype != null && genotype != null)
+        if (this.transform.childCount == 0)
         {
-            if (phänotype.attribute == genotype.attribute)
-            {
-                Debug.Log("Its a match!");
+            Debug.Log("Fill out all forms");
 
-                checkManager.AddCheckToChecklist(this.GetComponent<PhänoGenoChecker>(), true);
-            }
-            else
-            {
-                Debug.Log("try again!");
-                checkManager.AddCheckToChecklist(this.GetComponent<PhänoGenoChecker>(), false);
-            }
+            return;
         }
         else
         {
-            Debug.Log("Fill out all forms");
-            checkManager.AddCheckToChecklist(this.GetComponent<PhänoGenoChecker>(), false);
+
+
+            phänotype = this.transform.GetChild(0).GetComponent<ElementAssigner>();
+            genotype = genoObject.transform.GetChild(0).GetComponent<ElementAssigner>();
+
+            if (phänotype != null && genotype != null)
+            {
+                if (phänotype.attribute == genotype.attribute)
+                {
+                    Debug.Log("Its a match!");
+                    // if (!checkManager.GetChecklist().ContainsKey(this.gameObject.name))
+                    checkManager.AddCheckToChecklist(this.gameObject.name, true);
+                }
+                else
+                {
+                    Debug.Log("try again!");
+                    if (!checkManager.GetChecklist().ContainsKey(this.gameObject.name))
+                        checkManager.AddCheckToChecklist(this.gameObject.name, false);
+                }
+            }
         }
 
 
+        checkManager.ControllChecklist();
     }
 }

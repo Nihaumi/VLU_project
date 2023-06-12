@@ -2671,6 +2671,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genoObject: {fileID: 2131711502}
+--- !u!1 &975462011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975462013}
+  - component: {fileID: 975462012}
+  m_Layer: 0
+  m_Name: CheckManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &975462012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975462011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0c06db45cbdac4db588c7eb2899b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnCheckCall:
+    m_PersistentCalls:
+      m_Calls: []
+  structureSize: 2
+--- !u!4 &975462013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975462011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996877430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,8 +2906,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918970366}
-        m_TargetAssemblyTypeName: "Ph\xE4noGenoChecker, Assembly-CSharp"
+      - m_Target: {fileID: 975462012}
+        m_TargetAssemblyTypeName: CheckManager, Assembly-CSharp
         m_MethodName: CheckBtnClicked
         m_Mode: 1
         m_Arguments:
@@ -3679,8 +3727,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1547744057}
   m_HandleRect: {fileID: 1547744056}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9090908
+  m_Value: 1.0000011
+  m_Size: 0.90909094
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

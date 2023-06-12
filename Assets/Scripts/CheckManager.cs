@@ -1,43 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class CheckManager
+public class CheckManager : MonoBehaviour
 {
+
     //events
     public delegate void ClickAction();
     public static event ClickAction OnClick;
     public static event ClickAction OnCheck;
 
+    //unity events
+    public UnityEvent OnCheckCall;
 
     //list of structure spots
-    Dictionary<PhänoGenoChecker, bool> checkList = new Dictionary<PhänoGenoChecker, bool>();
+    public Dictionary<string, bool> checkList = new Dictionary<string, bool>();
 
-    [SerializeField] private int checkableStructureItemCount;
+    public int structureSize;
 
+    //subscribe to events
+    private void OnEnable()
+    {
+        OnCheckCall.AddListener(ControllChecklist);
+    }
+
+    private void OnDisable()
+    {
+        OnCheckCall.RemoveListener(ControllChecklist);
+    }
 
     public void CheckBtnClicked()
     {
         OnClick();
-        if(checkList.Count == checkableStructureItemCount)
-        {
 
-        }
     }
 
-    private void ControllChecklist()
+    public Dictionary<string, bool> GetChecklist()
     {
-        foreach(var checkItem in checkList)
+        return checkList;
+    }
+    public void ControllChecklist()
+    {
+        
+
+        foreach (var checkItem in checkList)
         {
-            if(checkList.ContainsValue(false))
+            if (checkList.ContainsValue(false))
             {
-                Debug.Log($"Error Found: {checkList.Keys}, {checkList.Values}");
+                Debug.Log("There seems to be a mistake. Try again.");
             }
+            else
+            {
+                if (checkList.Count < structureSize)
+                {
+                    Debug.Log("It looks good so far. Continue to fill the structure.");
+                }
+                else
+                {
+                    Debug.Log("All looks well");
+                    Debug.Log($"Count : {checkList.Count}");
+                }
+            }
+
         }
+        checkList.Clear();
     }
 
-    public void AddCheckToChecklist(PhänoGenoChecker typeChek, bool isCorrect)
+    public void AddCheckToChecklist(string Slot, bool isCorrect)
     {
-        checkList.Add(typeChek, isCorrect);
+        checkList.Add(Slot, isCorrect);
+
+
     }
 }
