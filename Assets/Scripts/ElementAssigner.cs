@@ -15,10 +15,10 @@ public class ElementAssigner : MonoBehaviour
 
     public enum Attribute
     {
-        AA,
-        Aa,
-        aA,
-        aa
+        DomDom,
+        DomRez,
+        RezDom,
+        RezRez
     };
     public Attribute attribute;
 
