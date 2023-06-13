@@ -22,7 +22,6 @@ public class PhänoGenoChecker : MonoBehaviour
     private int correct = 1;
     private int wrong = 2;
 
-
     //checkManager Script
     CheckManager checkManager;
     private void Start()
@@ -54,15 +53,8 @@ public class PhänoGenoChecker : MonoBehaviour
         }
         else
         {
-            if(phänoImage && genoObject.transform.childCount == 0)
-            {
-                phänoImage.color = colors.invisible;
-            }
-            if(genoImage && this.transform.childCount == 0)
-            {
-                genoImage.color = colors.invisible;
-            }
-            
+            ResetColorTo(colors.invisible);
+
             return empty;
         }
     }
@@ -71,6 +63,19 @@ public class PhänoGenoChecker : MonoBehaviour
     {
         phänoImage.color = color;
         genoImage.color = color;
+    }
+
+    private void ResetColorTo(Color32 color)
+    {
+        if (phänoImage && genoObject.transform.childCount == 0)
+        {
+            phänoImage.color = color;
+        }
+        if (genoImage && this.transform.childCount == 0)
+        {
+            genoImage.color = color;
+        }
+
     }
 
 }

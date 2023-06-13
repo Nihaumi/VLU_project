@@ -38,7 +38,19 @@ namespace TextManager
             SetText(tutorial, tutorialHeading);
         }
 
+        private void OnEnable()
+        {
+            ResetManager.OnReset += Reset;
+        }
 
+        private void OnDisable()
+        {
+            ResetManager.OnReset -= Reset;
+        }
+        private void Reset()
+        {
+            SetText(tutorial, tutorialHeading);
+        }
 
 
     }

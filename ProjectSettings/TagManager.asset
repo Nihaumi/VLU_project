@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - outline
+  - genoOutline
   layers:
   - Default
   - TransparentFX
