@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using System.Linq;
+using TextManager;
 
 public class CheckManager : MonoBehaviour
 {
@@ -19,25 +19,36 @@ public class CheckManager : MonoBehaviour
     public Dictionary<string, bool> checkList = new Dictionary<string, bool>();
 
     public List<PhänoGenoChecker> namelist = new List<PhänoGenoChecker>();
-    [SerializeField] private List<bool> verificationlist = new List<bool>();
+    [SerializeField] private List<int> verificationlist = new List<int>();
 
     public int structureSize;
+
+    //references
+    TextChanger textChanger;
 
     public void CheckBtnClicked()
     {
         foreach(PhänoGenoChecker item in namelist)
         {
-            bool temp = item.Verify();
+            int temp = item.Verify();
             verificationlist.Add(temp);
         }
-
-        if (verificationlist.Contains(false))
+        if(!verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            Debug.Log("Try again");
+            textChanger.SetText(TextChanger.empty, TextChanger.emptyHeading);
         }
-        else
+       else if (verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            Debug.Log("You did it!");
+            textChanger.SetText(TextChanger.soFarGood, TextChanger.soFarGoodHeading);
+        }
+       else if (verificationlist.Contains(2))
+        {
+            textChanger.SetText(TextChanger.fail, TextChanger.failHeading);
+        }
+       
+        else if(verificationlist.Contains(1) && !verificationlist.Contains(0) && !verificationlist.Contains(2))
+        {
+            textChanger.SetText(TextChanger.success, TextChanger.successHeading);
         }
 
         verificationlist.Clear();
@@ -48,6 +59,8 @@ public class CheckManager : MonoBehaviour
     {
         AddChildrenToList("F0");
         AddChildrenToList("F1");
+
+        textChanger = GameObject.FindObjectOfType<TextChanger>();
     }
 
     //fills list with slots containing the checker script

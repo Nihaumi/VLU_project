@@ -17,6 +17,11 @@ public class PhänoGenoChecker : MonoBehaviour
     //color script 
     Colors colors;
 
+    //verfication ints
+    private int empty = 0;
+    private int correct = 1;
+    private int wrong = 2;
+
 
     //checkManager Script
     CheckManager checkManager;
@@ -27,7 +32,7 @@ public class PhänoGenoChecker : MonoBehaviour
     }
 
     //check if the Geno and Phänotype pair fit together, add the bool to the dictionary of checkmanager and call event
-    public bool Verify()
+    public int Verify()
     {
         if(this.transform.childCount != 0 && genoObject.transform.childCount != 0)
         {
@@ -38,20 +43,18 @@ public class PhänoGenoChecker : MonoBehaviour
 
             if (phänotype != null && genotype != null && phänotype.attribute == genotype.attribute)
             {
-                Debug.Log("Its a match!");
                 ChangeColor(colors.green);
-                return true;
+                return correct;
             }
             else
             {
                 ChangeColor(colors.red);
-                return false;
+                return wrong;
             }
         }
         else
         {
-            Debug.Log("try again!");
-            return false;
+            return empty;
         }
     }
 
