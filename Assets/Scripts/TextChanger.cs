@@ -17,7 +17,7 @@ namespace TextManager
         static public string success = "Super! Dein Verständnis für dieses Thema ist sehr gut! \n\nMache jetzt den Test der Lektion oder schaue im Forum vorbei um dich mit anderen auszutauschen..";
         static public string successHeading = "Alles Richtig!";
 
-        static public string fail = "Anscheinend hast du Verständnislücken. \n\nSieh dir nochmal die Lektionen an oder Frage im Forum andere Lernende.";
+        static public string fail = "Die Geno - und Phänotypen passen nicht zusammen. \n\nSieh dir nochmal die Lektionen an oder Frage im Forum andere Lernende.";
         static public string failHeading = "Noch nicht ganz.";
 
         static public string soFarGood = "Das sieht gut aus! Du hast das Prizip verstanden. \n\nFülle die restliche Darstellung aus.";
@@ -35,7 +35,7 @@ namespace TextManager
 
         private void Start()
         {
-            SetText(success, tutorialHeading);
+            SetText(tutorial, tutorialHeading);
         }
 
 

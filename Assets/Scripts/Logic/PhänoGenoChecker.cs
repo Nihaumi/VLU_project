@@ -54,6 +54,15 @@ public class PhänoGenoChecker : MonoBehaviour
         }
         else
         {
+            if(phänoImage && genoObject.transform.childCount == 0)
+            {
+                phänoImage.color = colors.invisible;
+            }
+            if(genoImage && this.transform.childCount == 0)
+            {
+                genoImage.color = colors.invisible;
+            }
+            
             return empty;
         }
     }
@@ -63,4 +72,5 @@ public class PhänoGenoChecker : MonoBehaviour
         phänoImage.color = color;
         genoImage.color = color;
     }
+
 }
