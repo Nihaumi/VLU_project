@@ -10,6 +10,7 @@ namespace TextManager
     {
         [SerializeField] private TMP_Text guideTxt;
         [SerializeField] private TMP_Text guideTxtHeading;
+        [SerializeField] private Animation animation;
 
         static public string tutorial = "Ordne die Genotypen den entsprehenden Phänotypen zu. \n\nZiehe dazu die Elemente auf der Rechten Seite per DragnDrop auf die roten Felder in der Darstellung.";
         static public string tutorialHeading = "Tutorial";
@@ -28,8 +29,11 @@ namespace TextManager
 
         public void SetText(string text, string heading)
         {
-            guideTxt.SetText(text);
-            guideTxtHeading.SetText(heading);
+            animation.Play();
+            guideTxt.text = text;
+            guideTxtHeading.text = heading;
+            //animator.ResetTrigger("TextChange");
+
         }
 
 

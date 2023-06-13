@@ -33,6 +33,7 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             transform.position = Input.mousePosition;
         }
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
