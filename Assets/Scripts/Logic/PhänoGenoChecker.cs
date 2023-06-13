@@ -17,6 +17,7 @@ public class PhänoGenoChecker : MonoBehaviour
     //color script 
     Colors colors;
 
+
     //checkManager Script
     CheckManager checkManager;
     private void Start()
