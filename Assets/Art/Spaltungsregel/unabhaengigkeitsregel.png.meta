@@ -1,0 +1,865 @@
+fileFormatVersion: 2
+guid: 8a582830cb1667e49b3cdd2d9c44ccfc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_0
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 4222
+        width: 378
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebd8ff9c5adab842acf716807bf607d
+      internalID: 1184625769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_1
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 4206
+        width: 415
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f7e8598db8da8429ae60881f363af6
+      internalID: 1122275533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3957
+        width: 468
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a685d794efbbad4ebbc4582c80c8c79
+      internalID: -900332347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_4
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 3972
+        width: 498
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c218dfd49ccfe7341b321f0c923def10
+      internalID: -21148311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_6
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 3039
+        width: 2463
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac929b049e6c076488af0de95c0be6ff
+      internalID: 199237950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_7
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2680
+        width: 2556
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8856fcaaaf6d245a2896c4b2180a32
+      internalID: 1223449202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2353
+        width: 312
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100a250e6926294fb0ad4725ec1a941
+      internalID: 506465901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_16
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2342
+        width: 346
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3aae4881874e1d4d85fda0783fd81e1
+      internalID: 1142095402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_17
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2353
+        width: 312
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cec2d6c008fc894aa56f509911311e1
+      internalID: 1433629894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_18
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 2342
+        width: 346
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696940c4233b6e948967747a590b232d
+      internalID: 419041345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_19
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 2353
+        width: 312
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380d3926cce95d94e8914b54ba2f05ad
+      internalID: 28848710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_20
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 2342
+        width: 346
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e146050770f29954fa75a2d8585c7b90
+      internalID: -199095105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_21
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 2353
+        width: 314
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbd2333bcf68494d8fe2f09d0b3e27f
+      internalID: 2054629100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_22
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 2342
+        width: 344
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54a1c5a71079a14f98bfdb76c5bdf09
+      internalID: -222749271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_23
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1652
+        width: 1445
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d4334119dda514f9683a134afafafa
+      internalID: -443841621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_27
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 167
+        width: 344
+        height: 1443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b095948d4d152f4482fb3011a937959
+      internalID: -151545537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_28
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1315
+        width: 307
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad20f15a591611e46b68c3f8fc61b931
+      internalID: -635654842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_29
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1315
+        width: 307
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7904c1e9b05999a42851c51cd130e99b
+      internalID: -1952288089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_30
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1315
+        width: 307
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1323ab3b177342843996d199d59e6e6d
+      internalID: -2134432098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_31
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 1315
+        width: 307
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bc9e37e457df845b26de1a9acb72f5
+      internalID: -155720768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_33
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 932
+        width: 307
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab56200da11b37347bed9983027bf5bf
+      internalID: 251787603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_34
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 918
+        width: 341
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe1c40cf5257974c8872d312583135d
+      internalID: -1094426552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_35
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 932
+        width: 307
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d10370c33ae6e4e8dacce0b0866bb1
+      internalID: 1990888215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_36
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 918
+        width: 339
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bfbc621d2ef5d41b586dcafc3c5f2b
+      internalID: -1475563767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_38
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 570
+        width: 307
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434076a765e8b4c41bc7ef4b3ea9c78c
+      internalID: 1706515676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_39
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 570
+        width: 307
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaa6b5cad1ba194e943ced143f3521b
+      internalID: -1066224348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_40
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 570
+        width: 308
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a25f0af80708464580f78ee69561d27
+      internalID: 307929094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_41
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 570
+        width: 309
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5bb6dd47c77b246a6dc05af75bc09b
+      internalID: 360192507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_43
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 198
+        width: 307
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1926099b8e7ef14f889f3471cf58f0d
+      internalID: 786351333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_44
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 185
+        width: 339
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d966cd7f1959d4ba3316876ee909ee
+      internalID: -1665932821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_45
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 185
+        width: 308
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e936237856d4f3947a43e17862750ade
+      internalID: -1853080442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_46
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 187
+        width: 334
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38670d41e0f7d04584b5c576ad2d988
+      internalID: 828590880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unabhaengigkeitsregel_4: -21148311
+      unabhaengigkeitsregel_44: -1665932821
+      unabhaengigkeitsregel_39: -1066224348
+      unabhaengigkeitsregel_9: 609271091
+      unabhaengigkeitsregel_27: -151545537
+      unabhaengigkeitsregel_45: -1853080442
+      unabhaengigkeitsregel_1: 1122275533
+      unabhaengigkeitsregel_35: 1990888215
+      unabhaengigkeitsregel_32: 200048895
+      unabhaengigkeitsregel_20: -199095105
+      unabhaengigkeitsregel_2: -900332347
+      unabhaengigkeitsregel_5: -2056547056
+      unabhaengigkeitsregel_29: -1952288089
+      unabhaengigkeitsregel_30: -2134432098
+      unabhaengigkeitsregel_14: -50812454
+      unabhaengigkeitsregel_6: 199237950
+      unabhaengigkeitsregel_16: 1142095402
+      unabhaengigkeitsregel_41: 360192507
+      unabhaengigkeitsregel_0: 1184625769
+      unabhaengigkeitsregel_26: -2065917090
+      unabhaengigkeitsregel_36: -1475563767
+      unabhaengigkeitsregel_42: 898356501
+      unabhaengigkeitsregel_11: -23504974
+      unabhaengigkeitsregel_21: 2054629100
+      unabhaengigkeitsregel_12: 1154311517
+      unabhaengigkeitsregel_43: 786351333
+      unabhaengigkeitsregel_15: 506465901
+      unabhaengigkeitsregel_24: -413362929
+      unabhaengigkeitsregel_28: -635654842
+      unabhaengigkeitsregel_40: 307929094
+      unabhaengigkeitsregel_38: 1706515676
+      unabhaengigkeitsregel_17: 1433629894
+      unabhaengigkeitsregel_10: -689791950
+      unabhaengigkeitsregel_25: 1757027942
+      unabhaengigkeitsregel_22: -222749271
+      unabhaengigkeitsregel_19: 28848710
+      unabhaengigkeitsregel_46: 828590880
+      unabhaengigkeitsregel_31: -155720768
+      unabhaengigkeitsregel_34: -1094426552
+      unabhaengigkeitsregel_18: 419041345
+      unabhaengigkeitsregel_37: -1838338123
+      unabhaengigkeitsregel_8: -1359666566
+      unabhaengigkeitsregel_3: -447979720
+      unabhaengigkeitsregel_33: 251787603
+      unabhaengigkeitsregel_13: -358372871
+      unabhaengigkeitsregel_7: 1223449202
+      unabhaengigkeitsregel_23: -443841621
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

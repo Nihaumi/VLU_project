@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 82ea7eb433582034899e3e6b975ade1c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3028
+        width: 2944
+        height: 924
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54a1c5a71079a14f98bfdb76c5bdf09
+      internalID: -222749271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_23
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3949
+        width: 2938
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d4334119dda514f9683a134afafafa
+      internalID: -443841621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2339
+        width: 2939
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b095948d4d152f4482fb3011a937959
+      internalID: -151545537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel 1_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 904
+        width: 2944
+        height: 1091
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888d322f25503f74890b4baf2cdc4f48
+      internalID: -1608209376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unabhaengigkeitsregel 1_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 2944
+        height: 897
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bb5d3befeb609418d5653eb5185cb0
+      internalID: 1921987567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unabhaengigkeitsregel_4: -21148311
+      unabhaengigkeitsregel_44: -1665932821
+      unabhaengigkeitsregel_39: -1066224348
+      unabhaengigkeitsregel_9: 609271091
+      unabhaengigkeitsregel_27: -151545537
+      unabhaengigkeitsregel_45: -1853080442
+      unabhaengigkeitsregel_1: 1122275533
+      unabhaengigkeitsregel_35: 1990888215
+      unabhaengigkeitsregel_32: 200048895
+      unabhaengigkeitsregel 1_1: 1921987567
+      unabhaengigkeitsregel_20: -199095105
+      unabhaengigkeitsregel_2: -900332347
+      unabhaengigkeitsregel_5: -2056547056
+      unabhaengigkeitsregel_29: -1952288089
+      unabhaengigkeitsregel_30: -2134432098
+      unabhaengigkeitsregel_14: -50812454
+      unabhaengigkeitsregel_6: 199237950
+      unabhaengigkeitsregel_16: 1142095402
+      unabhaengigkeitsregel_41: 360192507
+      unabhaengigkeitsregel_0: 1184625769
+      unabhaengigkeitsregel_26: -2065917090
+      unabhaengigkeitsregel_36: -1475563767
+      unabhaengigkeitsregel_42: 898356501
+      unabhaengigkeitsregel_11: -23504974
+      unabhaengigkeitsregel_21: 2054629100
+      unabhaengigkeitsregel_12: 1154311517
+      unabhaengigkeitsregel_43: 786351333
+      unabhaengigkeitsregel_15: 506465901
+      unabhaengigkeitsregel_24: -413362929
+      unabhaengigkeitsregel_28: -635654842
+      unabhaengigkeitsregel_40: 307929094
+      unabhaengigkeitsregel_38: 1706515676
+      unabhaengigkeitsregel_17: 1433629894
+      unabhaengigkeitsregel_10: -689791950
+      unabhaengigkeitsregel_25: 1757027942
+      unabhaengigkeitsregel_22: -222749271
+      unabhaengigkeitsregel_19: 28848710
+      unabhaengigkeitsregel_46: 828590880
+      unabhaengigkeitsregel_31: -155720768
+      unabhaengigkeitsregel_34: -1094426552
+      unabhaengigkeitsregel_18: 419041345
+      unabhaengigkeitsregel_37: -1838338123
+      unabhaengigkeitsregel 1_0: -1608209376
+      unabhaengigkeitsregel_8: -1359666566
+      unabhaengigkeitsregel_3: -447979720
+      unabhaengigkeitsregel_33: 251787603
+      unabhaengigkeitsregel_13: -358372871
+      unabhaengigkeitsregel_7: 1223449202
+      unabhaengigkeitsregel_23: -443841621
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

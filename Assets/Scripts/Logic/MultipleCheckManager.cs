@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using TextManager;
 
-public class CheckManager : MonoBehaviour
+public class MultipleCheckManager : MonoBehaviour
 {
 
     //events
@@ -18,7 +18,7 @@ public class CheckManager : MonoBehaviour
     //list of structure spots
     public Dictionary<string, bool> checkList = new Dictionary<string, bool>();
 
-    public List<PhänoGenoChecker> namelist = new List<PhänoGenoChecker>();
+    public List<MultiplePhänoGenoChecker1> namelist = new List<MultiplePhänoGenoChecker1>();
     [SerializeField] private List<int> verificationlist = new List<int>();
 
     public int structureSize;
@@ -28,7 +28,7 @@ public class CheckManager : MonoBehaviour
 
     public void CheckBtnClicked()
     {
-        foreach(PhänoGenoChecker item in namelist)
+        foreach(MultiplePhänoGenoChecker1 item in namelist)
         {
             int temp = item.Verify();
             verificationlist.Add(temp);
@@ -63,15 +63,15 @@ public class CheckManager : MonoBehaviour
         textChanger = GameObject.FindObjectOfType<TextChanger>();
     }
 
-    //fills list with children containing the checker script
+    //fills list with slots containing the checker script
     private void AddChildrenToList(string parent)
     {
         GameObject parentObject = GameObject.Find(parent).gameObject;
         for (int i = 0; i < parentObject.transform.childCount - 1; i++)
         {
             Transform child = parentObject.transform.GetChild(i);
-            if (child.GetComponent<PhänoGenoChecker>())
-                namelist.Add(child.GetComponent<PhänoGenoChecker>());
+            if (child.GetComponent<MultiplePhänoGenoChecker1>())
+                namelist.Add(child.GetComponent<MultiplePhänoGenoChecker1>());
         }
     }
 }
