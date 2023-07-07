@@ -23,17 +23,18 @@ public class MultiplePhänoGenoChecker1 : MonoBehaviour
     private int wrong = 2;
 
     //checkManager Script
-    CheckManager checkManager;
+    MultipleCheckManager checkManager;
     private void Start()
     {
-        checkManager = GameObject.Find("CheckManager").GetComponent<CheckManager>();
+        checkManager = GameObject.Find("CheckManager").GetComponent<MultipleCheckManager>();
         colors = new Colors();
     }
 
     //check if the Geno and Phänotype pair fit together, add the bool to the dictionary of checkmanager and call event
     public int Verify()
     {
-        if(this.transform.childCount != 0 && genoObject.transform.childCount != 0)
+        colors = new Colors();
+        if (this.transform.childCount != 0 && genoObject.transform.childCount != 0)
         {
             phänotype = this.transform.GetChild(0).GetComponent<MultipleElementAssigner>();
             genotype = genoObject.transform.GetChild(0).GetComponent<MultipleElementAssigner>();

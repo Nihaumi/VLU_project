@@ -1948,7 +1948,6 @@ GameObject:
   - component: {fileID: 484944908}
   - component: {fileID: 484944907}
   - component: {fileID: 484944906}
-  - component: {fileID: 484944911}
   m_Layer: 5
   m_Name: F1GenoSlot (1)
   m_TagString: Untagged
@@ -2076,24 +2075,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484944904}
   m_CullTransparentMesh: 1
---- !u!114 &484944911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484944904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab0c06db45cbdac4db588c7eb2899b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnCheckCall:
-    m_PersistentCalls:
-      m_Calls: []
-  namelist: []
-  verificationlist: 
-  structureSize: 0
 --- !u!1 &494146049
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,7 +4285,7 @@ Animator:
   m_GameObject: {fileID: 1002175581}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 345b2706624167c4c944a6ea36749922, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8279f70e22956a84eb469e77ad4ce570, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6393,7 +6374,6 @@ GameObject:
   - component: {fileID: 1664803559}
   - component: {fileID: 1664803561}
   - component: {fileID: 1664803560}
-  - component: {fileID: 1664803562}
   m_Layer: 5
   m_Name: GenoSlot (2)
   m_TagString: Untagged
@@ -6521,24 +6501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db04c656e98052d41a99b81e3f15d937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1664803562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664803555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab0c06db45cbdac4db588c7eb2899b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnCheckCall:
-    m_PersistentCalls:
-      m_Calls: []
-  namelist: []
-  verificationlist: 
-  structureSize: 0
 --- !u!1 &1669419645
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,7 +6864,7 @@ Animator:
   m_GameObject: {fileID: 1709737008}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 345b2706624167c4c944a6ea36749922, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8279f70e22956a84eb469e77ad4ce570, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8621,7 +8583,6 @@ GameObject:
   - component: {fileID: 2131711506}
   - component: {fileID: 2131711508}
   - component: {fileID: 2131711507}
-  - component: {fileID: 2131711509}
   m_Layer: 5
   m_Name: GenoSlot
   m_TagString: Untagged
@@ -8749,21 +8710,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db04c656e98052d41a99b81e3f15d937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2131711509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131711502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab0c06db45cbdac4db588c7eb2899b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnCheckCall:
-    m_PersistentCalls:
-      m_Calls: []
-  namelist: []
-  verificationlist: 
-  structureSize: 0
