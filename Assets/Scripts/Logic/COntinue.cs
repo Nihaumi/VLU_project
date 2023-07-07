@@ -21,6 +21,11 @@ public class COntinue : MonoBehaviour
         if (contentIndex < scrollContent.transform.childCount)
         {
             GetScrollContentElement(contentIndex).SetActive(true);
+            if (contentIndex == scrollContent.transform.childCount - 2)
+            {
+                GetScrollContentElement(contentIndex + 1).SetActive(true);
+                contentIndex++;
+            }
             contentIndex++;
             scrollbar.GetComponent<Scrollbar>().value = scrollValue;
         }
@@ -36,6 +41,7 @@ public class COntinue : MonoBehaviour
         for(int i = 1; i < scrollContent.transform.childCount; i++)
         {
             GetScrollContentElement(i).SetActive(false);
+
         }
     }
 }
