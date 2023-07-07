@@ -21,6 +21,12 @@ public class MultipleCheckManager : MonoBehaviour
     public List<MultiplePhänoGenoChecker1> namelist = new List<MultiplePhänoGenoChecker1>();
     [SerializeField] private List<int> verificationlist = new List<int>();
 
+    [SerializeField] private GameObject Gen1;
+    [SerializeField] private GameObject Gen2;
+    [SerializeField] private GameObject Gen3;
+    [SerializeField] private GameObject Gen4;
+    [SerializeField] private GameObject Gen5;
+
     public int structureSize;
 
     //references
@@ -57,16 +63,29 @@ public class MultipleCheckManager : MonoBehaviour
 
     private void Start()
     {
-        AddChildrenToList("F0");
-        AddChildrenToList("F1");
-
+        FillList();
         textChanger = GameObject.FindObjectOfType<TextChanger>();
     }
 
-    //fills list with slots containing the checker script
-    private void AddChildrenToList(string parent)
+    public void FillList()
     {
-        GameObject parentObject = GameObject.Find(parent).gameObject;
+        namelist.Clear();
+        //AddChildrenToList(Gen1);
+        AddChildrenToList(Gen2);
+        //AddChildrenToList(Gen3);
+        //AddChildrenToList(Gen4);
+        //AddChildrenToList(Gen5);
+
+    }
+
+    //fills list with slots containing the checker script
+    private void AddChildrenToList(GameObject parent)
+    {
+        if (!parent.activeInHierarchy)
+        {
+            return;
+        }
+        GameObject parentObject = parent;
         for (int i = 0; i < parentObject.transform.childCount - 1; i++)
         {
             Transform child = parentObject.transform.GetChild(i);
