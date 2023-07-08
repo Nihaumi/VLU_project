@@ -8,6 +8,7 @@ public class TextChangerRule3 : MonoBehaviour
     [SerializeField] private TMP_Text guideTxt;
     [SerializeField] private TMP_Text guideTxtHeading;
     [SerializeField] private Animation animation;
+    [SerializeField] private TMP_Text pagination;
 
     static public string tutorial = "Ziehe die Elemente auf der Rechten Seite per DragnDrop auf die roten Felder in der Darstellung.";
     static public string tutorialHeading = "Tutorial";
@@ -45,6 +46,10 @@ public class TextChangerRule3 : MonoBehaviour
 
     }
 
+    public void SetPagination(string text)
+    {
+        pagination.text = text;
+    }
 
     private void Start()
     {

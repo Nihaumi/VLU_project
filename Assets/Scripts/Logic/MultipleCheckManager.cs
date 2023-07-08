@@ -36,6 +36,7 @@ public class MultipleCheckManager : MonoBehaviour
 
     //tells which level of the scheme we are on currently/ how many times the continue buttom was clicked
     [SerializeField] private int levelIndex;
+    [SerializeField] private int hintPageIndex;
 
     //references
     [SerializeField] TextChangerRule3 textChanger;
@@ -91,15 +92,40 @@ public class MultipleCheckManager : MonoBehaviour
         FillList();
 
         levelIndex = 0;
-        SetTextAndListAccordingToCurrentIndex();
+        hintPageIndex = 0;
+        SetTextAndListAccordingToCurrentIndex(levelIndex);
+        textChanger.SetPagination((hintPageIndex + 1).ToString() + "/" + (levelIndex + 1).ToString());
     }
 
     //set the tutorial Text according to what level in the scheme we are on
-    private void SetTextAndListAccordingToCurrentIndex()
+
+    public void ShowPreviousHint()
+    {
+        if(hintPageIndex > 0)
+        {
+            hintPageIndex--;
+        }
+        SetTextAndListAccordingToCurrentIndex(hintPageIndex);
+        textChanger.SetPagination((hintPageIndex + 1).ToString() + "/" + (levelIndex + 1).ToString());
+    }
+
+    public void ShowNextHint()
+    {
+        if (hintPageIndex < levelIndex)
+        {
+            hintPageIndex++;
+        }
+        SetTextAndListAccordingToCurrentIndex(hintPageIndex);
+        textChanger.SetPagination((hintPageIndex+1).ToString() + "/" + (levelIndex+1).ToString());
+    }
+
+
+    private void SetTextAndListAccordingToCurrentIndex(int i)
     {
         string currentText = "";
         string currentHeading = "";
-        switch (levelIndex)
+        int index = i;
+        switch (index)
         {
             case 0:
                 currentText = TextChangerRule3.introRow1;
@@ -128,7 +154,9 @@ public class MultipleCheckManager : MonoBehaviour
     private void SetIndexAndTextAndList()
     {
         levelIndex++;
-        SetTextAndListAccordingToCurrentIndex();
+        hintPageIndex = levelIndex;
+        SetTextAndListAccordingToCurrentIndex(levelIndex);
+        textChanger.SetPagination((hintPageIndex + 1).ToString() + "/" + (levelIndex + 1).ToString());
     }
 
     private void SetCurrentList(List<MultiplePhänoGenoChecker1> list)
