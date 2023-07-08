@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class COntinue : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class COntinue : MonoBehaviour
     [SerializeField] private GameObject scrollbar;
     [SerializeField] private int contentIndex = 1;
     [SerializeField] private float scrollValue = 0.2f;
+
+    public UnityEvent OnContinueClicked;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,8 @@ public class COntinue : MonoBehaviour
             contentIndex++;
             scrollbar.GetComponent<Scrollbar>().value = scrollValue;
         }
+
+        OnContinueClicked.Invoke();
      
     }
     private GameObject GetScrollContentElement(int index)
