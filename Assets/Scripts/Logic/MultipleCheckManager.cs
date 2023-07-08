@@ -73,8 +73,8 @@ public class MultipleCheckManager : MonoBehaviour
         //AddChildrenToList(Gen1);
         AddChildrenToList(Gen2);
         AddChildrenToList(Gen3);
-        //AddChildrenToList(Gen4);
-        //AddChildrenToList(Gen5);
+        AddChildrenToList(Gen4);
+        AddChildrenToList(Gen5);
 
     }
 
