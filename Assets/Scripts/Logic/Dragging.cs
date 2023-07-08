@@ -11,6 +11,7 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public Transform parentAfterDrag;
     [SerializeField] private Image image;
+    public TextMeshProUGUI tmp;
 
 
     private void Start()
@@ -24,14 +25,16 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
-        if (image.transform.GetChild(0).GetComponent<Image>())
+        if (image.transform.GetChild(image.transform.childCount - 1).GetComponent<TextMeshProUGUI>())
         {
             image.transform.GetChild(0).GetComponent<Image>().raycastTarget = false;
             image.transform.GetChild(1).GetComponent<Image>().raycastTarget = false;
+            image.transform.GetChild(2).GetComponent<TextMeshProUGUI>().raycastTarget = false;
         }
         else
         {
-            image.transform.GetChild(0).GetComponent<TextMeshPro>().raycastTarget = false;
+            image.transform.GetChild(0).GetComponent<Image>().raycastTarget = false;
+            image.transform.GetChild(1).GetComponent<Image>().raycastTarget = false;
         }
 
     }
@@ -49,15 +52,16 @@ public class Dragging : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;
-        if (image.transform.GetChild(0).GetComponent<Image>())
+        if (image.transform.GetChild(image.transform.childCount-1).GetComponent<TextMeshProUGUI>())
         {
             image.transform.GetChild(0).GetComponent<Image>().raycastTarget = true;
             image.transform.GetChild(1).GetComponent<Image>().raycastTarget = true;
+            image.transform.GetChild(2).GetComponent<TextMeshProUGUI>().raycastTarget = true;
         }
         else
         {
-
-            image.transform.GetChild(0).GetComponent<TextMeshPro>().raycastTarget = true;
+            image.transform.GetChild(0).GetComponent<Image>().raycastTarget = true;
+            image.transform.GetChild(1).GetComponent<Image>().raycastTarget = true;
         }
     }
 

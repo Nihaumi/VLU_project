@@ -72,7 +72,7 @@ public class MultipleCheckManager : MonoBehaviour
         namelist.Clear();
         //AddChildrenToList(Gen1);
         AddChildrenToList(Gen2);
-        //AddChildrenToList(Gen3);
+        AddChildrenToList(Gen3);
         //AddChildrenToList(Gen4);
         //AddChildrenToList(Gen5);
 

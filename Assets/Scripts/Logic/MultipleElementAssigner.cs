@@ -19,7 +19,8 @@ public class MultipleElementAssigner : MonoBehaviour
         DomDom,
         DomRez,
         RezDom,
-        RezRez
+        RezRez,
+        F2Keimzellen
     };
     public FirstAttribute firtsAttribute;
 
@@ -28,7 +29,8 @@ public class MultipleElementAssigner : MonoBehaviour
         DomDom,
         DomRez,
         RezDom,
-        RezRez
+        RezRez,
+        F2Keimzellen
     };
     public LastAttribute lastAttribute;
 
