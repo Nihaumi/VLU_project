@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Spaltungsregel.unity
     guid: c23c08a33fade9b4584a322d8d12480f
+  - enabled: 0
+    path: "Assets/Scenes/Uniformit\xE4tsregel.unity"
+    guid: 3cc2938c745c4574c920377db76605f9
+  - enabled: 0
+    path: "Assets/Scenes/Unabh\xE4ngigkeitsregel.unity"
+    guid: 63c1f0e98c398cd4387c1d4160671609
   m_configObjects: {}
