@@ -24,6 +24,9 @@ namespace TextManager
         static public string introRow3 = "Richtig. Alle Nachkommen in der F1 Generation weisen den gleichen Genotypen auf. \n\nDie Allele können nun wieder unabhängig vererbt und kombiniert werden. Welche möglichen kombinationen gibt es in den Keimzellen? Nutze wieder den Drasg & Drop";
         static public string introRow3Heading = "Unabhängigkeitsregel";
 
+        static public string introRow4 = "TBC";
+        static public string introRow4Heading = "Unabhängigkeitsregel";
+
         static public string success = "Super! Dein Verständnis für dieses Thema ist sehr gut! \n\nMache jetzt den Test der Lektion oder schaue im Forum vorbei um dich mit anderen auszutauschen..";
         static public string successHeading = "Alles Richtig!";
 

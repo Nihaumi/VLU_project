@@ -38,59 +38,97 @@ public class MultipleCheckManager : MonoBehaviour
     [SerializeField] private int levelIndex;
 
     //references
-    TextChanger textChanger;
+    [SerializeField] TextChangerRule3 textChanger;
     PaletteManager paletteManager;
     COntinue continueManager;
 
     private void OnEnable()
     {
-        
+
     }
 
     public void CheckBtnClicked()
     {
-        IncreaseLevelInedex();
 
-        foreach(MultiplePhänoGenoChecker1 item in namelist)
+        foreach (MultiplePhänoGenoChecker1 item in namelist)
         {
             int temp = item.Verify();
             verificationlist.Add(temp);
         }
-        if(!verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
+        if (!verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            textChanger.SetText(TextChanger.empty, TextChanger.emptyHeading);
+            //textChanger.SetText(TextChangerRule3.empty, TextChangerRule3.emptyHeading);
         }
-       else if (verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
+        else if (verificationlist.Contains(1) && verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            textChanger.SetText(TextChanger.soFarGood, TextChanger.soFarGoodHeading);
+            //textChanger.SetText(TextChangerRule3.soFarGood, TextChangerRule3.soFarGoodHeading);
         }
-       else if (verificationlist.Contains(2))
+        else if (verificationlist.Contains(2))
         {
-            textChanger.SetText(TextChanger.fail, TextChanger.failHeading);
+            //textChanger.SetText(TextChangerRule3.fail, TextChangerRule3.failHeading);
         }
-       
-        else if(verificationlist.Contains(1) && !verificationlist.Contains(0) && !verificationlist.Contains(2))
+
+        else if (verificationlist.Contains(1) && !verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            textChanger.SetText(TextChanger.success, TextChanger.successHeading);
+            //textChanger.SetText(TextChangerRule3.success, TextChangerRule3.successHeading);
         }
 
         verificationlist.Clear();
 
     }
-
+    private void OnDisable()
+    {
+        continueManager.OnContinueClicked.RemoveListener(SetIndexAndTextAndList);
+    }
     private void Start()
     {
-        FillList();
-        textChanger = GameObject.FindObjectOfType<TextChanger>();
+        //references to other scripts
+        textChanger = GameObject.FindObjectOfType<TextChangerRule3>();
         paletteManager = GameObject.FindObjectOfType<PaletteManager>();
         continueManager = GameObject.FindObjectOfType<COntinue>();
-     
+        continueManager.OnContinueClicked.AddListener(SetIndexAndTextAndList);
+
+        FillList();
+
         levelIndex = 0;
+        SetTextAndListAccordingToCurrentIndex();
     }
 
-    private void IncreaseLevelInedex()
+    //set the tutorial Text according to what level in the scheme we are on
+    private void SetTextAndListAccordingToCurrentIndex()
+    {
+        string currentText = "";
+        string currentHeading = "";
+        switch (levelIndex)
+        {
+            case 0:
+                currentText = TextChangerRule3.introRow1;
+                currentHeading = TextChangerRule3.introHeading;
+                break;
+            case 1:
+                currentText = TextChangerRule3.introRow2;
+                currentHeading = TextChangerRule3.introRow2Heading;
+                break;
+            case 2:
+                currentText = TextChangerRule3.introRow3;
+                currentHeading = TextChangerRule3.introRow3Heading;
+                break;
+            case 3:
+                currentText = TextChangerRule3.introRow4;
+                currentHeading = TextChangerRule3.introRow4Heading;
+                break;
+            default:
+                currentText = "";
+                currentHeading = "something went wrong";
+                break;
+        }
+        textChanger.SetText(currentText, currentHeading);
+    }
+
+    private void SetIndexAndTextAndList()
     {
         levelIndex++;
+        SetTextAndListAccordingToCurrentIndex();
     }
 
     private void SetCurrentList(List<MultiplePhänoGenoChecker1> list)
@@ -104,10 +142,10 @@ public class MultipleCheckManager : MonoBehaviour
     {
         namelist.Clear();
         //AddChildrenToList(Gen1);
-        AddChildrenToList(Gen2, namelistF1Keimzellen);
-        AddChildrenToList(Gen3, namelistKeimzellen);
-        AddChildrenToList(Gen4, namelistF2);
-        AddChildrenToList(Gen5, namelistF2);
+        AddChildrenToList(Gen2, namelist);
+        AddChildrenToList(Gen3, namelist);
+        AddChildrenToList(Gen4, namelist);
+        AddChildrenToList(Gen5, namelist);
 
     }
 
