@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class TextChangerRule3 : MonoBehaviour
@@ -9,6 +10,7 @@ public class TextChangerRule3 : MonoBehaviour
     [SerializeField] private TMP_Text guideTxtHeading;
     [SerializeField] private Animation animation;
     [SerializeField] private TMP_Text pagination;
+    [SerializeField] private TMP_Text paletteHeader;
 
     static public string tutorial = "Ziehe die Elemente auf der Rechten Seite per DragnDrop auf die roten Felder in der Darstellung.";
     static public string tutorialHeading = "Tutorial";
@@ -17,13 +19,13 @@ public class TextChangerRule3 : MonoBehaviour
     static public string introHeading = "Unabhängigkeitsregel";
 
     static public string introRow2 = "Pro Merkmal wird 1 Allel auf die Keimzellen verteilt. \n\nIn der F1 Generation sind die Allele für gelb und glatte Samen <i><b>dominant</b></i>, wie im Phänotyp zu sehen. \n\nOrdne jetzt die richtigen Genotypen der F1 Generation per Drag und Drop zu.";
-    static public string introRow2Heading = "Unabhängigkeitsregel";
+    static public string introRow2Heading = "F1 Genotypen";
 
     static public string introRow3 = "Alle Nachkommen in der F1 Generation weisen den <i><b>gleichen Genotypen</b></i> auf. \n\nDie Allele können nun wieder unabhängig vererbt und kombiniert werden. Welche möglichen kombinationen gibt es in den Keimzellen?";
-    static public string introRow3Heading = "Unabhängigkeitsregel";
+    static public string introRow3Heading = "Keimzellen";
 
     static public string introRow4 = "In der F2 Generation entstehen 16 neue Kombinationen. \n\nOrde Ihnen die Genotypen zu. \n\nDie Kombinationen sollten im Verhältnis von <i><b>9:3:3:1</b></i> auftreten.";
-    static public string introRow4Heading = "Unabhängigkeitsregel";
+    static public string introRow4Heading = "F2 Genotypen";
 
     static public string success = "Super! Dein Verständnis für dieses Thema ist sehr gut! \n\nMache jetzt den Test der Lektion oder schaue im Forum vorbei um dich mit anderen auszutauschen..";
     static public string successHeading = "Alles Richtig!";
@@ -36,6 +38,15 @@ public class TextChangerRule3 : MonoBehaviour
 
     static public string emptyHeading = "Leere Darstellung";
     static public string empty = tutorial;
+
+
+    static public string palette0 = "";
+    static public string palette1 = "F1 Genotypen";
+    static public string palette2 = "Keimzellen";
+    static public string palette3 = "F2 Genotypen";
+
+    public UnityEvent OnPaletteHeaderChanged;
+
 
     public void SetText(string text, string heading)
     {
@@ -50,6 +61,18 @@ public class TextChangerRule3 : MonoBehaviour
     {
         pagination.text = text;
     }
+
+    public void SetPaletteHeader(string text)
+    {
+        paletteHeader.text = text;
+        OnPaletteHeaderChanged.Invoke();
+    }
+
+    public string GetPaletteHeaderText()
+    {
+        return paletteHeader.text;
+    }
+
 
     private void Start()
     {

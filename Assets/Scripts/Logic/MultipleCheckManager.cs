@@ -71,7 +71,10 @@ public class MultipleCheckManager : MonoBehaviour
 
         else if (verificationlist.Contains(1) && !verificationlist.Contains(0) && !verificationlist.Contains(2))
         {
-            //textChanger.SetText(TextChangerRule3.success, TextChangerRule3.successHeading);
+            textChanger.SetText(TextChangerRule3.success, TextChangerRule3.successHeading);
+            levelIndex = 5;
+            SetTextAndListAccordingToCurrentIndex(levelIndex);
+            textChanger.SetPagination((hintPageIndex + 1).ToString() + "/" + (levelIndex + 1).ToString());
         }
 
         verificationlist.Clear();
@@ -124,24 +127,29 @@ public class MultipleCheckManager : MonoBehaviour
     {
         string currentText = "";
         string currentHeading = "";
+        string paletteText = "";
         int index = i;
         switch (index)
         {
             case 0:
                 currentText = TextChangerRule3.introRow1;
                 currentHeading = TextChangerRule3.introHeading;
+                paletteText = TextChangerRule3.palette0;
                 break;
             case 1:
                 currentText = TextChangerRule3.introRow2;
                 currentHeading = TextChangerRule3.introRow2Heading;
+                paletteText = TextChangerRule3.palette1;
                 break;
             case 2:
                 currentText = TextChangerRule3.introRow3;
                 currentHeading = TextChangerRule3.introRow3Heading;
+                paletteText = TextChangerRule3.palette2;
                 break;
             case 3:
                 currentText = TextChangerRule3.introRow4;
                 currentHeading = TextChangerRule3.introRow4Heading;
+                paletteText = TextChangerRule3.palette3;
                 break;
             default:
                 currentText = "";
@@ -149,10 +157,12 @@ public class MultipleCheckManager : MonoBehaviour
                 break;
         }
         textChanger.SetText(currentText, currentHeading);
+        textChanger.SetPaletteHeader(paletteText);
     }
 
     private void SetIndexAndTextAndList()
     {
+        if (levelIndex >= 3) { return; }
         levelIndex++;
         hintPageIndex = levelIndex;
         SetTextAndListAccordingToCurrentIndex(levelIndex);
